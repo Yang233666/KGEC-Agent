@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "default_provider": "fixture",
+  "network_enabled_by_default": false,
+  "live_provider_opt_in": true,
+  "live_provider_settings": {
+    "endpoint_environment_variable": "KGEC_LLM_ENDPOINT",
+    "model_environment_variable": "KGEC_LLM_MODEL",
+    "key_environment_variable": "KGEC_LLM_API_KEY",
+    "timeout_environment_variable": "KGEC_LLM_TIMEOUT_SECONDS"
+  },
+  "authoritative_fields": [
+    "confidence",
+    "margin",
+    "thresholds",
+    "semantic_checks",
+    "final_decision",
+    "destination"
+  ]
+}

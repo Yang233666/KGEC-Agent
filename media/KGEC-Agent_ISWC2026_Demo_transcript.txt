@@ -1,0 +1,23 @@
+Knowledge graph embedding models can rank candidate links, but a ranking alone does not tell a curator whether a prediction should be accepted, verified, escalated, rejected, or left unresolved. KGEC-Agent addresses this gap by converting calibrated confidence into an explicit curation action.
+
+A language model interprets the request and coordinates eight specialized tools. The KGE component proposes candidates, KGEC provides calibrated probabilities, and a confidence policy selects the initial route. Evidence retrieval and semantic validation then determine the final decision, while provenance records how that decision was reached. The language model cannot alter confidence values, policy thresholds, evidence results, semantic constraints, or candidate admission.
+
+This recording uses reviewed deterministic fixtures so that the complete agent workflow can be replayed without external services. The three workflows demonstrate system behaviour rather than benchmark performance.
+
+In the automatic-acceptance workflow, the natural-language request is mapped to a structured link-prediction query. The system produces a ranked candidate list together with raw scores and calibrated probabilities.
+
+The Top-1 confidence is 0.92 and the Top-1 versus Top-2 margin is 0.86. Both satisfy the acceptance policy. All seven semantic checks pass, so the final decision is accepted and the prediction is staged in the separate accepted-candidate graph.
+
+In the second workflow, the Top-1 confidence is 0.72. The confidence policy selects verification rather than immediate acceptance. The agent invokes the configured local evidence source, but no supporting evidence is found.
+
+The semantic checks still pass. Because the evidence requirement remains unresolved, the candidate is sent to the human-review queue instead of being staged automatically.
+
+The third workflow shows why confidence alone is not sufficient. The candidate has a calibrated confidence of 0.91 and initially satisfies the acceptance policy.
+
+However, semantic validation detects a blocking domain violation. That violation overrides the initial route, and the final decision becomes rejected. This separation ensures that high confidence cannot bypass explicit knowledge-graph constraints.
+
+Every run records the ordered execution of all eight tools: prediction, calibration, confidence routing, evidence retrieval, semantic checking, final decision, candidate-graph routing, and provenance export.
+
+The interface exposes reason codes, evidence states, semantic outcomes, destinations, and input and output hashes. The complete record can be exported as JSON, CSV, RDF Turtle using PROV-O, or Markdown.
+
+KGEC-Agent extends knowledge graph completion from ranking candidate entities to deciding how each prediction should enter an evidence-aware and auditable curation process. The public repository provides the complete offline replay, tests, sample exports, and reproducibility instructions for all three workflows.

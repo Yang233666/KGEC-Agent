@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "policy_version": "1.0.0",
+  "accept_threshold": 0.85,
+  "verify_threshold": 0.5,
+  "margin_threshold": 0.1,
+  "candidate_graph_only": true
+}

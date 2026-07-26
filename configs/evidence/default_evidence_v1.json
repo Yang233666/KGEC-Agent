@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "default_source": "local_fixture",
+  "sparql_enabled_by_default": false,
+  "sparql_endpoint_environment_variable": "KGEC_SPARQL_ENDPOINT",
+  "sparql_timeout_seconds": 5.0,
+  "normalized_outcomes": [
+    "supporting",
+    "contradicting",
+    "not_found",
+    "unavailable",
+    "error"
+  ]
+}

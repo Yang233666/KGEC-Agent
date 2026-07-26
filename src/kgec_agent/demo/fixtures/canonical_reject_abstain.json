@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "canonical_reject_abstain",
+  "title": "Constraint-blocked rejection",
+  "disclosure": "Deterministic workflow fixture; not benchmark evidence or live-model output.",
+  "natural_language_request": "Predict the tail for h_person using r_domain_bad.",
+  "llm": {
+    "query": {
+      "subject": "h_person",
+      "relation": "r_domain_bad",
+      "direction": "tail",
+      "top_k": 3,
+      "natural_language": "Predict the tail for h_person using r_domain_bad."
+    },
+    "tool_plan": [
+      "predict_link",
+      "calibrate_prediction",
+      "apply_confidence_policy",
+      "retrieve_evidence",
+      "check_semantic_constraints",
+      "make_final_decision",
+      "propose_kg_update",
+      "export_provenance"
+    ]
+  },
+  "candidates": [
+    {
+      "entity": "t_domain_bad",
+      "label": "Domain-Mismatched Candidate",
+      "entity_type": "Person",
+      "raw_score": 3.4,
+      "calibrated_probability": 0.91
+    },
+    {
+      "entity": "t_domain_alt",
+      "label": "Alternative Candidate",
+      "entity_type": "Person",
+      "raw_score": 1.0,
+      "calibrated_probability": 0.05
+    },
+    {
+      "entity": "t_domain_other",
+      "label": "Other Candidate",
+      "entity_type": "Person",
+      "raw_score": 0.3,
+      "calibrated_probability": 0.04
+    }
+  ],
+  "thresholds": {
+    "accept_threshold": 0.85,
+    "verify_threshold": 0.5,
+    "margin_threshold": 0.1
+  },
+  "evidence": {
+    "outcome": "not_found",
+    "detail": "Evidence is not required before the blocking semantic check."
+  },
+  "constraints": {
+    "subject_type": "Person",
+    "expected_domain": "Organization",
+    "expected_range": "Person",
+    "allowed_candidate_types": ["Person"],
+    "existing_triples": [],
+    "contradicting_triples": [],
+    "functional_property": false,
+    "existing_functional_objects": [],
+    "inverse_relation": "r_domain_bad_inverse",
+    "inverse_triples": [["t_domain_bad", "r_domain_bad_inverse", "h_person"]],
+    "blocking_categories": {
+      "domain": true,
+      "range": true,
+      "entity_type": true,
+      "duplicate": true,
+      "contradiction": true,
+      "functional_property": true,
+      "inverse_relation": true
+    }
+  },
+  "expected": {
+    "initial_route": "auto_accept",
+    "evidence_outcome": "not_requested",
+    "final_decision": "rejected",
+    "destination": "rejection_state"
+  }
+}

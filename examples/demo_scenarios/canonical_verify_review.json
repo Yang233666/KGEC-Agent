@@ -1,0 +1,10 @@
+{
+  "scenario_id": "canonical_verify_review",
+  "packaged_fixture": "kgec_agent.demo.fixtures/canonical_verify_review.json",
+  "workflow": "evidence-triggered human review",
+  "expected_initial_route": "verify",
+  "expected_evidence_outcome": "not_found",
+  "expected_final_decision": "human_review",
+  "expected_destination": "human_review_queue",
+  "command": "python -m kgec_agent.demo replay --scenario canonical_verify_review --output-dir runtime-output/canonical_verify_review"
+}

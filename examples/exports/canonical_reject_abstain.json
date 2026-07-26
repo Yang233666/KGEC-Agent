@@ -1,0 +1,248 @@
+{
+  "calibrated_probabilities": [
+    0.91,
+    0.05,
+    0.04
+  ],
+  "candidates": [
+    {
+      "calibrated_probability": 0.91,
+      "entity": "t_domain_bad",
+      "entity_type": "Person",
+      "label": "Domain-Mismatched Candidate",
+      "raw_score": 3.4
+    },
+    {
+      "calibrated_probability": 0.05,
+      "entity": "t_domain_alt",
+      "entity_type": "Person",
+      "label": "Alternative Candidate",
+      "raw_score": 1.0
+    },
+    {
+      "calibrated_probability": 0.04,
+      "entity": "t_domain_other",
+      "entity_type": "Person",
+      "label": "Other Candidate",
+      "raw_score": 0.3
+    }
+  ],
+  "confidence": 0.91,
+  "content_hash": "3bb462244b9a7b78e84d66baa6e812c9bb2dd6d620be38b070e722f7a9243988",
+  "destination": "rejection_state",
+  "evidence": {
+    "detail": "The initial route does not require evidence retrieval.",
+    "outcome": "not_requested",
+    "reason_codes": [
+      "EVIDENCE_NOT_REQUIRED"
+    ],
+    "source": "local_fixture"
+  },
+  "execution_mode": "offline_fixture_replay",
+  "final_decision": "rejected",
+  "implementation_version": "1.0.0",
+  "initial_route": "auto_accept",
+  "llm_explanation": "canonical_reject_abstain routed to auto_accept; evidence was not_requested. The recorded final decision is rejected and the destination is rejection_state.",
+  "margin": 0.86,
+  "natural_language_request": "Predict the tail for h_person using r_domain_bad.",
+  "raw_scores": [
+    3.4,
+    1.0,
+    0.3
+  ],
+  "reason_codes": [
+    "PREDICTION_FROM_REVIEWED_FIXTURE",
+    "CALIBRATION_FROM_REVIEWED_FIXTURE",
+    "TOP1_MARGIN_COMPUTED",
+    "CONFIDENCE_ACCEPT_THRESHOLD_MET",
+    "MARGIN_THRESHOLD_MET",
+    "EVIDENCE_NOT_REQUIRED",
+    "SEMANTIC_DOMAIN_VIOLATION",
+    "SEMANTIC_RANGE_PASS",
+    "SEMANTIC_ENTITY_TYPE_PASS",
+    "SEMANTIC_DUPLICATE_PASS",
+    "SEMANTIC_CONTRADICTION_PASS",
+    "SEMANTIC_FUNCTIONAL_PROPERTY_PASS",
+    "SEMANTIC_INVERSE_RELATION_PASS",
+    "SEMANTIC_BLOCKING_VIOLATION",
+    "REJECTED_BY_BLOCKING_CONSTRAINT",
+    "domain",
+    "CANDIDATE_GRAPH_ONLY"
+  ],
+  "run_id": "run-08166fd932e3688c1e08110f",
+  "scenario_id": "canonical_reject_abstain",
+  "schema_version": "1.0.0",
+  "semantic_checks": [
+    {
+      "blocking": true,
+      "category": "domain",
+      "detail": "Subject type violates the relation domain.",
+      "passed": false,
+      "reason_code": "SEMANTIC_DOMAIN_VIOLATION"
+    },
+    {
+      "blocking": true,
+      "category": "range",
+      "detail": "Candidate type satisfies the relation range.",
+      "passed": true,
+      "reason_code": "SEMANTIC_RANGE_PASS"
+    },
+    {
+      "blocking": true,
+      "category": "entity_type",
+      "detail": "Candidate has an explicitly allowed entity type.",
+      "passed": true,
+      "reason_code": "SEMANTIC_ENTITY_TYPE_PASS"
+    },
+    {
+      "blocking": true,
+      "category": "duplicate",
+      "detail": "Candidate triple is not already present.",
+      "passed": true,
+      "reason_code": "SEMANTIC_DUPLICATE_PASS"
+    },
+    {
+      "blocking": true,
+      "category": "contradiction",
+      "detail": "No known contradictory statement was found.",
+      "passed": true,
+      "reason_code": "SEMANTIC_CONTRADICTION_PASS"
+    },
+    {
+      "blocking": true,
+      "category": "functional_property",
+      "detail": "Functional-property cardinality is satisfied.",
+      "passed": true,
+      "reason_code": "SEMANTIC_FUNCTIONAL_PROPERTY_PASS"
+    },
+    {
+      "blocking": true,
+      "category": "inverse_relation",
+      "detail": "Inverse-relation condition is satisfied.",
+      "passed": true,
+      "reason_code": "SEMANTIC_INVERSE_RELATION_PASS"
+    }
+  ],
+  "stable_event_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "structured_query": {
+    "direction": "tail",
+    "natural_language": "Predict the tail for h_person using r_domain_bad.",
+    "relation": "r_domain_bad",
+    "subject": "h_person",
+    "top_k": 3
+  },
+  "thresholds": {
+    "accept_threshold": 0.85,
+    "margin_threshold": 0.1,
+    "verify_threshold": 0.5
+  },
+  "tool_invocations": [
+    {
+      "error": null,
+      "input_hash": "c8342c515e8e97f3d13e86695f761720da95529a039b561301d653214501e1fc",
+      "order": 1,
+      "output_hash": "d2f856c3ee52b0bcae1c90351035189903215ffb04ba9f1769917096363f8462",
+      "reason_codes": [
+        "PREDICTION_FROM_REVIEWED_FIXTURE"
+      ],
+      "status": "success",
+      "tool_name": "predict_link"
+    },
+    {
+      "error": null,
+      "input_hash": "d2f856c3ee52b0bcae1c90351035189903215ffb04ba9f1769917096363f8462",
+      "order": 2,
+      "output_hash": "960faba9b8f12fc2ee92d9f635337aeeef28e933d2241dceb1658cdc015b0a63",
+      "reason_codes": [
+        "CALIBRATION_FROM_REVIEWED_FIXTURE",
+        "TOP1_MARGIN_COMPUTED"
+      ],
+      "status": "success",
+      "tool_name": "calibrate_prediction"
+    },
+    {
+      "error": null,
+      "input_hash": "f785ddb7481fe48830655e15657e947f3e9e0e704eb5cf528f1f6abf9024ee0e",
+      "order": 3,
+      "output_hash": "15b3b8091d2b62155593c8de400d03f9ec7fd56825391ac7aa4356dab911903c",
+      "reason_codes": [
+        "CONFIDENCE_ACCEPT_THRESHOLD_MET",
+        "MARGIN_THRESHOLD_MET"
+      ],
+      "status": "success",
+      "tool_name": "apply_confidence_policy"
+    },
+    {
+      "error": null,
+      "input_hash": "bc4ccdd046fd56b79fc7a9ff6d899a43e71556475e6f89491bf7f93a32b4494b",
+      "order": 4,
+      "output_hash": "ddc20dd0effc9feac8155b821f69cb2b0808cb1aa3c6041d396f19f1dec182d2",
+      "reason_codes": [
+        "EVIDENCE_NOT_REQUIRED"
+      ],
+      "status": "success",
+      "tool_name": "retrieve_evidence"
+    },
+    {
+      "error": null,
+      "input_hash": "c6d28ac021daee307776f74de2a1b91cae0160e947d8ece7007c290b3894b4bf",
+      "order": 5,
+      "output_hash": "a0314a8fbc15aa731a542df24cf409c6e630abb625e15ba92aa9a886cdcdab8f",
+      "reason_codes": [
+        "SEMANTIC_DOMAIN_VIOLATION",
+        "SEMANTIC_RANGE_PASS",
+        "SEMANTIC_ENTITY_TYPE_PASS",
+        "SEMANTIC_DUPLICATE_PASS",
+        "SEMANTIC_CONTRADICTION_PASS",
+        "SEMANTIC_FUNCTIONAL_PROPERTY_PASS",
+        "SEMANTIC_INVERSE_RELATION_PASS",
+        "SEMANTIC_BLOCKING_VIOLATION"
+      ],
+      "status": "success",
+      "tool_name": "check_semantic_constraints"
+    },
+    {
+      "error": null,
+      "input_hash": "81513d98fb4d16293c3bfd2afabbf465b5bca008dabb0123f67811d9e64e6c8c",
+      "order": 6,
+      "output_hash": "6bdf584f3b28dbd938e46bc12486a4c92e0a33493e0152f6991ccb5156e44475",
+      "reason_codes": [
+        "REJECTED_BY_BLOCKING_CONSTRAINT",
+        "domain"
+      ],
+      "status": "success",
+      "tool_name": "make_final_decision"
+    },
+    {
+      "error": null,
+      "input_hash": "ad5108ad3e99afabb375a90f596e3bb45b5a72df2d48b542eac0127f14111d8a",
+      "order": 7,
+      "output_hash": "59ddefdd1b168796101c58f89bf031c7d1450c00c55864516e9ba4130283c8f7",
+      "reason_codes": [
+        "CANDIDATE_GRAPH_ONLY",
+        "REJECTED_BY_BLOCKING_CONSTRAINT",
+        "domain"
+      ],
+      "status": "success",
+      "tool_name": "propose_kg_update"
+    },
+    {
+      "error": null,
+      "input_hash": "432b550fc535306ea5b29530bec65236f211cc3e7df60474b685830ad70357ca",
+      "order": 8,
+      "output_hash": "b7db50846dfea17df6c17fe72ac9341b04a9971cd042c77551298de77660fe11",
+      "reason_codes": [],
+      "status": "success",
+      "tool_name": "export_provenance"
+    }
+  ]
+}

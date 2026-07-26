@@ -1,0 +1,10 @@
+{
+  "scenario_id": "canonical_reject_abstain",
+  "packaged_fixture": "kgec_agent.demo.fixtures/canonical_reject_abstain.json",
+  "workflow": "constraint-blocked rejection",
+  "expected_initial_route": "auto_accept",
+  "expected_constraint_result": "blocking domain violation",
+  "expected_final_decision": "rejected",
+  "expected_destination": "rejection_state",
+  "command": "python -m kgec_agent.demo replay --scenario canonical_reject_abstain --output-dir runtime-output/canonical_reject_abstain"
+}

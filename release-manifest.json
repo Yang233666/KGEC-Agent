@@ -1,0 +1,688 @@
+{
+  "checksum_rule": "SHA256SUMS covers every public release file except itself. Its manifest line uses the canonical manifest digest defined above.",
+  "files": [
+    {
+      "classification": "ci_configuration",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": ".github/workflows/public-release.yml",
+      "sha256": "5651edc49c48298ebd1a066291c6478658a4fa44815b9ff5ece7eb89e2e21521",
+      "size": 1294
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": ".gitignore",
+      "sha256": "2d3213e57491f02d04753413fc6ef037be0bfbf28d88128d8ba5b534af3a9cc4",
+      "size": 115
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "CITATION.cff",
+      "sha256": "40ac1cf959e2e3ff3a103db99fa5c06d1bc98578fb1271eb5843a34925660aac",
+      "size": 823
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "LICENSE",
+      "sha256": "bc192602e0248f4b129ccb8efe07592131a10580f3f434a1932c33828df543ce",
+      "size": 1066
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "README.md",
+      "sha256": "76531b02fe963dbf0b8976d84d66f76572997abeed2b62d36d3f7d0377c6c1bc",
+      "size": 7448
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "generated_release_integrity_metadata",
+      "path": "SHA256SUMS",
+      "sha256": "209795c6128b81698424f439c9df03619622c0c15ab573868dd858888829b6a5",
+      "size": 9856
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "38b8b35264116e9524fc022dcdcfa2d1f13628ac8ee1f579e9907d719a7a7a49",
+      "size": 1476
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "apps/kgec_agent_demo.py",
+      "sha256": "bed7fedfd2025419de0e1d37a95ebcbb98454a432b705a90522dbf26d74c688c",
+      "size": 145
+    },
+    {
+      "classification": "configuration",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "configs/evidence/default_evidence_v1.json",
+      "sha256": "08d318f2f1b2180fe3cc891e583eeb6265ec85301b7f8082cbd2ada2280f8158",
+      "size": 325
+    },
+    {
+      "classification": "configuration",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "configs/llm/default_llm_v1.json",
+      "sha256": "2f2cc5e87d0ddd0040576d445b62b64dd3824f29e8d22620f08314553d422521",
+      "size": 542
+    },
+    {
+      "classification": "configuration",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "configs/policies/default_v1.json",
+      "sha256": "4f759848e7b6092901bfa6800e7cdb443a6be36e3d38b5e69deab9caca5ab310",
+      "size": 175
+    },
+    {
+      "classification": "configuration",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "configs/ui/default_ui_v1.json",
+      "sha256": "b537f2c54ccb45da90c5b08c9ae52e57e08891f5e9e549f6e1e769f664bbaf9c",
+      "size": 530
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/architecture.md",
+      "sha256": "64fcd822ca9e03fcf35be5f37e014eedabaaa43e1e21ea9bf19682c3806367df",
+      "size": 1530
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/demo.md",
+      "sha256": "cb0cde7f80af519345642c152ef641a9d1890f41fb218cb9e03bd3dc8852e17c",
+      "size": 2448
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/live_integrations.md",
+      "sha256": "8f6c1253043f31bd0def13612de399913596fd92b8243a24796b7a72e1072dc7",
+      "size": 1790
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/media.md",
+      "sha256": "73fa88c8cc0a0047c046d1bdc621cc723756a7a29b96e685b5acbe2daa1bbb45",
+      "size": 2142
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/provenance.md",
+      "sha256": "e6aafe2e7112fb00b15d84b21cf40650af4a67c5dd74c7cb654a24cbcbbcb4ff",
+      "size": 1656
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/quickstart.md",
+      "sha256": "a115917e5977396d0c674790f8425f144f7ed5d219cbcccde0521c63f3f4743b",
+      "size": 1525
+    },
+    {
+      "classification": "documentation",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "docs/reproducibility.md",
+      "sha256": "5aae7472a1223da9af8c1c947b51d99f1beb3ebd4c9766a6c49af11c8b03cb47",
+      "size": 2300
+    },
+    {
+      "classification": "fixture",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "examples/demo_scenarios/canonical_accept.json",
+      "sha256": "62ceb3efa5ed44afd8494f80dac2352867a8e1a7fb309622fe58677f5c670919",
+      "size": 410
+    },
+    {
+      "classification": "fixture",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "examples/demo_scenarios/canonical_reject_abstain.json",
+      "sha256": "3f89d477ef6613d9259c121dad0693f0c36dd8bc5b881d3df490f51a8578092c",
+      "size": 502
+    },
+    {
+      "classification": "fixture",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "examples/demo_scenarios/canonical_verify_review.json",
+      "sha256": "65aabc13beb17d32818cb05ac0093215f5c8c3b63bd35728ec0a9e1cf2dbba52",
+      "size": 486
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_accept.csv",
+      "sha256": "1624741f481528bc058a036c4343ff940c49bd53ce31fca669205d513de58b35",
+      "size": 5939
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_accept.json",
+      "sha256": "230610919a3b0b6a85a292ef8d4ae748c4b1e9c9e5c4027e17b7253c01c8786b",
+      "size": 7352
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_accept.md",
+      "sha256": "2d95a5343509ed57e62e134146080d7ba84e2e3e38e8ba5b2c8aad4f6d6bf4fc",
+      "size": 3623
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_accept.ttl",
+      "sha256": "5bc9254833bc34c3025d03f92c167d68e5295c39da6ed51ee5a7daf775218e5a",
+      "size": 23679
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_reject_abstain.csv",
+      "sha256": "1603f2fecd85ed1a257560f774aeabbb8fe1e8f0b6223db9dc7585a7123b94ec",
+      "size": 5958
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_reject_abstain.json",
+      "sha256": "17266f273ee45c50b6192fa5e9f0868db708cb963ed74c147c6899db19fc9451",
+      "size": 7370
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_reject_abstain.md",
+      "sha256": "2e2f8c811f1d94546df3888822c81e4eb4b9a14895f56770ebf009c8620ff74e",
+      "size": 3625
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_reject_abstain.ttl",
+      "sha256": "21acfeca3dc42b6f8be2e882c1e9e7a47a84a610189e5581e9d61aea8d4c0454",
+      "size": 23944
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_verify_review.csv",
+      "sha256": "8a29a891fb646bea83fbb73a01c13a19bcb95b3b57c5d7afad9503f1d8d8accd",
+      "size": 5890
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_verify_review.json",
+      "sha256": "08f1b8af6befbfb185ee40b11e00a3f793751e2406480ca287034f177bc5715f",
+      "size": 7302
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_verify_review.md",
+      "sha256": "77a5066c5e8a66eaf784c58756ad56b82ed0c12da405310d4f53cb10ef9c2a0a",
+      "size": 3584
+    },
+    {
+      "classification": "generated_example",
+      "licence_provenance": "generated_by_kgec_agent_1.0.0",
+      "path": "examples/exports/canonical_verify_review.ttl",
+      "sha256": "24ec54701713ed4ca18f44174cfcc601c7cd6e5e5e22d9cfc4271f62bcdca962",
+      "size": 23537
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/architecture_workflow.png",
+      "sha256": "4502c8bc5a2f84690e8d9d15bd2e57c2e3b769bcb528f462a06b5fbb147aee19",
+      "size": 133050
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/demo_workflow_composite.png",
+      "sha256": "6a36fc2eee45dfdb0a70c8c58d6939a02b91cab74b40134b626a333c2dfa78d9",
+      "size": 1728509
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/screenshots/canonical_accept_decision.png",
+      "sha256": "5e47b0a0e4d440e84e50cceb127936f589db051fd760c3c987bcd5c1a52bf4f5",
+      "size": 420092
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/screenshots/canonical_reject_abstain_decision.png",
+      "sha256": "c021f66b50b9f811f7d50b05d75c199c724e214a45a883560ab8f3669a39c4a3",
+      "size": 485505
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/screenshots/canonical_verify_review_decision.png",
+      "sha256": "cce82a77c04c675f0706c20561b94c175c83c9e32892e06ac927bed4f7706ef7",
+      "size": 413775
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "figures/screenshots/provenance_export.png",
+      "sha256": "5716ebdee1aa2deff116527b9690d77cd0f63df64e9223cefcccf9885980e77b",
+      "size": 560013
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "media/KGEC-Agent_ISWC2026_Demo.en.srt",
+      "sha256": "021ea7c45521d1a74dcf9531832902605cc8696bad11206f977236af9356c811",
+      "size": 5384
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "media/KGEC-Agent_ISWC2026_Demo_transcript.txt",
+      "sha256": "0a891b57bfa523a5ceb6ccc480817f98da9bc744e7592d9dcbe369833c8e1ff7",
+      "size": 2991
+    },
+    {
+      "classification": "figure",
+      "licence_provenance": "author_generated_project_asset",
+      "path": "media/demo-thumbnail.png",
+      "sha256": "c99e882345a65a13068de3481422448ac5a1c10d38c18a81eaa3fed2f66f6831",
+      "size": 215924
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "pyproject.toml",
+      "sha256": "cb78a1b202203f2b27fca781f368d43dfb7e9284cfedb1e45de6d82bef49c3c5",
+      "size": 1202
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "generated_release_integrity_metadata",
+      "path": "release-manifest.json",
+      "sha256": "c91d05105104d7e8468114f4cb27c31de0fafaa6fa0e4695da90517ebd51af38",
+      "size": 25903
+    },
+    {
+      "classification": "release_metadata",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "requirements-demo.txt",
+      "sha256": "db6eddea4e032b885ef86014ec68b6be07d924376c68c9d02170b20c0bc24c89",
+      "size": 49
+    },
+    {
+      "classification": "release_tool",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "scripts/generate_release_manifest.py",
+      "sha256": "8de3984e526154ca059e1a40e278370a1a2c6ebd85f745271eb1d729071d21e2",
+      "size": 5860
+    },
+    {
+      "classification": "release_tool",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "scripts/validate_public_release.py",
+      "sha256": "5054cc3c12d8d7a886ef25385b1b1369d87e1f0e829e2faf1289cf6497ac1569",
+      "size": 6136
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/__init__.py",
+      "sha256": "cc90cdff0ced2d81c46276a3263ccae74120d4eeeb8746881466ecacbb084b2b",
+      "size": 192
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/__main__.py",
+      "sha256": "0a76fa85a54e94825fed8becb3d48047cd457a0142c730746d1fd3ec38d30dfc",
+      "size": 63
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/agent/__init__.py",
+      "sha256": "1d2a1f9c61efab264f869a6e51199eaa7f22c0ad349bcd7f11b4d7fd04dbb60f",
+      "size": 113
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/agent/replay.py",
+      "sha256": "3971f70c3747b39d9e1e31c268f3fcc5acbc1b4808016aadce8ec28a8360afe6",
+      "size": 9511
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/calibration/__init__.py",
+      "sha256": "f3fd0439d1fa872716950a6c41652cafbc75bf50d4a15bef97e1595a46206a88",
+      "size": 96
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/calibration/service.py",
+      "sha256": "5e68e9a1a3c355f8c40c04d97241f361ceb033e9ee9a2fa020e5117e3da2b51f",
+      "size": 717
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/constraints/__init__.py",
+      "sha256": "0ca04d4b183c73a45b8521eedd09fd639433663a4d0c2efafecf0cff78d38a6d",
+      "size": 93
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/constraints/engine.py",
+      "sha256": "b5189bb9d02fd23b506c87641c4647ad0ba8a8bcf3de09a921c6e0cfc99aa78d",
+      "size": 5444
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/decision/__init__.py",
+      "sha256": "fe6406662974c6916c50473f0f63cbbb370e70f510d5c935461be97d0b77fa2b",
+      "size": 84
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/decision/engine.py",
+      "sha256": "2dc73a8404eafb8af134b42139ea4d31d5550924d1fc7ca313a1814db4321dd0",
+      "size": 1932
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/__init__.py",
+      "sha256": "1609b7f69035563c903522de736a06ef76b9588882215286e13def6cdfb07921",
+      "size": 157
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/__main__.py",
+      "sha256": "0a76fa85a54e94825fed8becb3d48047cd457a0142c730746d1fd3ec38d30dfc",
+      "size": 63
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/cli.py",
+      "sha256": "7e26578b25875f1250a6bd0b298c9f04e356d73dc7c9ed59e020dc731c4d98d9",
+      "size": 1408
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/fixtures/__init__.py",
+      "sha256": "57325b9f9d6b3c3c07ec6f6d5c47377f5e985383ba2f10e75da556c10290b16a",
+      "size": 48
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/fixtures/canonical_accept.json",
+      "sha256": "d1b959705c3138ce7740891ee19954aa8a7bf25960d656419b9b513f870b3569",
+      "size": 2381
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/fixtures/canonical_reject_abstain.json",
+      "sha256": "0d11aa24068f63483cd4eb64d5b093294e8d0f1bc8f4e869d7d7831904a8039e",
+      "size": 2392
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/demo/fixtures/canonical_verify_review.json",
+      "sha256": "e210203ab0e29fc322710ddc2ab4547b17bcfcf94894e6ba956be9ebc9ed2afb",
+      "size": 2379
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/evidence/__init__.py",
+      "sha256": "e8b99ad77fbbd49aceb03c06462c9b0a923e13dc3ea04af50b22f660079e869f",
+      "size": 273
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/evidence/sources.py",
+      "sha256": "23ec1881969ea0aabc9dd0b2bdb8b9247b4bc62ff9980d3f65c4e0c11bf92a89",
+      "size": 5953
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/graph/__init__.py",
+      "sha256": "2df7a29ff1b6a11fc2e789dd5ed6d3cefc237e17504124f87f9d90af928e71d4",
+      "size": 96
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/graph/service.py",
+      "sha256": "08e5cfd74e619b399cc1f782cda04962aa74e57f97d1b967389ae6e9f52a2f51",
+      "size": 1050
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/interfaces/__init__.py",
+      "sha256": "95eb3be834acec640aa424538923329a1145f91ab7e44522b7aa3c4313254102",
+      "size": 112
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/interfaces/registry.py",
+      "sha256": "847a2e2da62c488bd7a4975cee6fe65f3df366dc83bc555b2b0c97ee3fe4cf02",
+      "size": 1198
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/llm/__init__.py",
+      "sha256": "4ec1db1b68ab74632140c4bab83577a0cb1251c539911f214a76defdeaa2931c",
+      "size": 195
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/llm/providers.py",
+      "sha256": "9c6366d94de0cf21e73a68d70dbb6cad2930b396212279f0c04e65893b1278b2",
+      "size": 6029
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/policy/__init__.py",
+      "sha256": "cb86c0dce57efc2a8fe3c91b7b5e84b9212b132b7868556cb3c0dd54c53abe83",
+      "size": 86
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/policy/engine.py",
+      "sha256": "20fc073bdd69ac40c5b525dce8c03a6b324821ac2f41e8cb244155d91e43a871",
+      "size": 1205
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/prediction/__init__.py",
+      "sha256": "575e751c24b20fd35acd7194918de1474d860154b97c536db5723a8a7586b965",
+      "size": 107
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/prediction/fixture.py",
+      "sha256": "28c7d3513cff477e3bb201908dc86dfb5736cf3127a162746ebcb9ab7e068447",
+      "size": 605
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/prediction/real_model.py",
+      "sha256": "4e7f77827ec5874e9ca340c5e63c87b04b750997cff9679e0073b945bc2c7b24",
+      "size": 652
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/provenance/__init__.py",
+      "sha256": "d374e1d54452dc1ba7a26bc253f658d863da37428448556a4b95a7e3c16d745b",
+      "size": 96
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/provenance/exporter.py",
+      "sha256": "3db50b6a626d0a0b95a1ffebfd7a23b1d33e7c39e1f70591b3ac9b6dcf0798af",
+      "size": 9541
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/runtime/__init__.py",
+      "sha256": "e25fe94d1136e6b7f7e908b2bd68e483b2b514e616592ab1e682e9206209a300",
+      "size": 112
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/runtime/hashing.py",
+      "sha256": "16b52afd2be0c1b3903469bb78942f6db1f2348de3eb9b5cebb830174e7b8d22",
+      "size": 933
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/schemas/__init__.py",
+      "sha256": "81b64d4a40570713a45ba5b713a26e452e5953d72017b388a97d622da08f2949",
+      "size": 40
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/schemas/models.py",
+      "sha256": "25503122a7b8708955d0eb9299b4863d5547c3c44a819aa2d13d6746ec110344",
+      "size": 7189
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/ui/__init__.py",
+      "sha256": "5c6dc0669d57bf38263c1c912f45443bfc6030f8dde5e0e2e1ce38f12b4c8f88",
+      "size": 61
+    },
+    {
+      "classification": "source",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "src/kgec_agent/ui/app.py",
+      "sha256": "d9db88078ee5f38d019f2abde90a0e9796b20d6e51357c745862d66cb41f94f2",
+      "size": 7499
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_canonical_replays.py",
+      "sha256": "a8ad006e8e6e8d96040c2367fa03e22a17e089f0cfa4fc586c782937955f91f4",
+      "size": 848
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_constraints.py",
+      "sha256": "c5771640c03d661fa8fad85b794ea27afcb41db3542a9fb870843b50d7729faf",
+      "size": 2953
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_exports.py",
+      "sha256": "df6c2113956589ceb54787f7363d888eb05106254bafdee6cd852557827aab1c",
+      "size": 1443
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_hashes.py",
+      "sha256": "213a4cafa9236505478f0d3a0341f0bd7d387c7b7b1015721dd9f533784e659c",
+      "size": 629
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_llm_orchestration.py",
+      "sha256": "f5419472ea13fea9e6faba0a6cd0e9a3225f41e5dd3d2a249330d2bb4bdafc5b",
+      "size": 2454
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_manifest.py",
+      "sha256": "3330cc81c3881ce479f144119db6215f78017228144973a7538331c9321a4a75",
+      "size": 1680
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_offline_no_network.py",
+      "sha256": "bc66e9435bd823a2f2e1810c1a2829d631fb17c0336667aa268e77273841a3e1",
+      "size": 882
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_policy_boundaries.py",
+      "sha256": "139fdb3a2911d02e893193e0a312b9f2cfe47f4f8f4790423d479ba32ea21596",
+      "size": 1479
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_sparql_adapter.py",
+      "sha256": "1ca33b15fca660ccea0789534c546b61237f893572fad20a19b3360f59ec5a37",
+      "size": 2066
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_streamlit_import.py",
+      "sha256": "4f236c6378b5c41cbb4ea5366c34cd9f252f1049259525c9b96f4bc30533b1d9",
+      "size": 1625
+    },
+    {
+      "classification": "test",
+      "licence_provenance": "original_kgec_agent_mit",
+      "path": "tests/public_release/test_tools.py",
+      "sha256": "7b1ba2184ebdc1e1a85f513f780ff4067e09888811bead4e5f9e089ea2c42b5b",
+      "size": 705
+    }
+  ],
+  "manifest_self_hash_rule": "For the release-manifest.json entry, SHA-256 is computed over this JSON with the sha256 values for release-manifest.json and SHA256SUMS replaced by 64 zeroes. Fixed-width replacement avoids self-reference.",
+  "ordering": "UTF-8 relative path ascending",
+  "release_version": "1.0.0",
+  "schema_version": "1.0.0"
+}

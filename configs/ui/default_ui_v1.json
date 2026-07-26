@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "application_title": "KGEC-Agent: A Calibration-Guided Agent for Trustworthy Knowledge Graph Completion",
+  "default_mode": "offline_fixture_replay",
+  "default_scenario": "canonical_accept",
+  "available_scenarios": [
+    "canonical_accept",
+    "canonical_verify_review",
+    "canonical_reject_abstain"
+  ],
+  "network_enabled": false,
+  "live_kge_enabled": false,
+  "live_llm_enabled": false,
+  "external_calibrator_required": false,
+  "export_formats": ["json", "csv", "turtle", "markdown"]
+}

@@ -1,0 +1,9 @@
+{
+  "scenario_id": "canonical_accept",
+  "packaged_fixture": "kgec_agent.demo.fixtures/canonical_accept.json",
+  "workflow": "automatic acceptance",
+  "expected_initial_route": "auto_accept",
+  "expected_final_decision": "accepted",
+  "expected_destination": "accepted_candidate_graph",
+  "command": "python -m kgec_agent.demo replay --scenario canonical_accept --output-dir runtime-output/canonical_accept"
+}

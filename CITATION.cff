@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use KGEC-Agent, please cite the ISWC 2026 demo paper."
+title: "KGEC-Agent: A Calibration-Guided Agent for Trustworthy Knowledge Graph Completion"
+type: software
+authors:
+  - given-names: Yang
+    family-names: Yang
+  - given-names: Yinan
+    family-names: Liu
+  - given-names: Edward
+    family-names: Curry
+version: 1.0.0
+date-released: 2026-07-25
+repository-code: "https://github.com/Yang233666/KGEC-Agent"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "KGEC-Agent: A Calibration-Guided Agent for Trustworthy Knowledge Graph Completion"
+  authors:
+    - given-names: Yang
+      family-names: Yang
+    - given-names: Yinan
+      family-names: Liu
+    - given-names: Edward
+      family-names: Curry
+  year: 2026
+  collection-title: "The Semantic Web – ISWC 2026"

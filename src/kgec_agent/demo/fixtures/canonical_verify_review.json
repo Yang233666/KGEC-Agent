@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "canonical_verify_review",
+  "title": "Evidence-triggered human review",
+  "disclosure": "Deterministic workflow fixture; not benchmark evidence or live-model output.",
+  "natural_language_request": "Review the most likely tail for h_person using r_review.",
+  "llm": {
+    "query": {
+      "subject": "h_person",
+      "relation": "r_review",
+      "direction": "tail",
+      "top_k": 3,
+      "natural_language": "Review the most likely tail for h_person using r_review."
+    },
+    "tool_plan": [
+      "predict_link",
+      "calibrate_prediction",
+      "apply_confidence_policy",
+      "retrieve_evidence",
+      "check_semantic_constraints",
+      "make_final_decision",
+      "propose_kg_update",
+      "export_provenance"
+    ]
+  },
+  "candidates": [
+    {
+      "entity": "t_review",
+      "label": "Review Document",
+      "entity_type": "Document",
+      "raw_score": 2.1,
+      "calibrated_probability": 0.72
+    },
+    {
+      "entity": "t_review_alt",
+      "label": "Alternative Document",
+      "entity_type": "Document",
+      "raw_score": 1.2,
+      "calibrated_probability": 0.16
+    },
+    {
+      "entity": "t_review_other",
+      "label": "Other Document",
+      "entity_type": "Document",
+      "raw_score": 0.9,
+      "calibrated_probability": 0.12
+    }
+  ],
+  "thresholds": {
+    "accept_threshold": 0.85,
+    "verify_threshold": 0.5,
+    "margin_threshold": 0.1
+  },
+  "evidence": {
+    "outcome": "not_found",
+    "detail": "The reviewed local evidence fixture contains no supporting statement."
+  },
+  "constraints": {
+    "subject_type": "Person",
+    "expected_domain": "Person",
+    "expected_range": "Document",
+    "allowed_candidate_types": ["Document"],
+    "existing_triples": [],
+    "contradicting_triples": [],
+    "functional_property": false,
+    "existing_functional_objects": [],
+    "inverse_relation": "r_reviewed_by",
+    "inverse_triples": [["t_review", "r_reviewed_by", "h_person"]],
+    "blocking_categories": {
+      "domain": true,
+      "range": true,
+      "entity_type": true,
+      "duplicate": true,
+      "contradiction": true,
+      "functional_property": true,
+      "inverse_relation": true
+    }
+  },
+  "expected": {
+    "initial_route": "verify",
+    "evidence_outcome": "not_found",
+    "final_decision": "human_review",
+    "destination": "human_review_queue"
+  }
+}

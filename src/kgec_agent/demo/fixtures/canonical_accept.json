@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "canonical_accept",
+  "title": "High-confidence automatic acceptance",
+  "disclosure": "Deterministic workflow fixture; not benchmark evidence or live-model output.",
+  "natural_language_request": "Predict which entity is supported by h_person using r_supports.",
+  "llm": {
+    "query": {
+      "subject": "h_person",
+      "relation": "r_supports",
+      "direction": "tail",
+      "top_k": 3,
+      "natural_language": "Predict which entity is supported by h_person using r_supports."
+    },
+    "tool_plan": [
+      "predict_link",
+      "calibrate_prediction",
+      "apply_confidence_policy",
+      "retrieve_evidence",
+      "check_semantic_constraints",
+      "make_final_decision",
+      "propose_kg_update",
+      "export_provenance"
+    ]
+  },
+  "candidates": [
+    {
+      "entity": "t_supported",
+      "label": "Supported Person",
+      "entity_type": "Person",
+      "raw_score": 3.2,
+      "calibrated_probability": 0.92
+    },
+    {
+      "entity": "t_alternative",
+      "label": "Alternative Person",
+      "entity_type": "Person",
+      "raw_score": 1.1,
+      "calibrated_probability": 0.06
+    },
+    {
+      "entity": "t_other",
+      "label": "Other Person",
+      "entity_type": "Person",
+      "raw_score": 0.4,
+      "calibrated_probability": 0.02
+    }
+  ],
+  "thresholds": {
+    "accept_threshold": 0.85,
+    "verify_threshold": 0.5,
+    "margin_threshold": 0.1
+  },
+  "evidence": {
+    "outcome": "not_found",
+    "detail": "Evidence is not required for the direct acceptance route."
+  },
+  "constraints": {
+    "subject_type": "Person",
+    "expected_domain": "Person",
+    "expected_range": "Person",
+    "allowed_candidate_types": ["Person"],
+    "existing_triples": [],
+    "contradicting_triples": [],
+    "functional_property": false,
+    "existing_functional_objects": [],
+    "inverse_relation": "r_supported_by",
+    "inverse_triples": [["t_supported", "r_supported_by", "h_person"]],
+    "blocking_categories": {
+      "domain": true,
+      "range": true,
+      "entity_type": true,
+      "duplicate": true,
+      "contradiction": true,
+      "functional_property": true,
+      "inverse_relation": true
+    }
+  },
+  "expected": {
+    "initial_route": "auto_accept",
+    "evidence_outcome": "not_requested",
+    "final_decision": "accepted",
+    "destination": "accepted_candidate_graph"
+  }
+}
